@@ -1,0 +1,38 @@
+// -------------------------------------
+// Zaffo Template: LESS > Buttons
+// -------------------------------------
+
+
+.button {
+	position: relative;
+	display: inline-block;
+	padding: 0 30px;
+	.transition(.6s);
+	background-color: @color__button--background;
+	border-radius: 100px;
+	border: 0;
+	box-shadow: 2px 5px 6px 0 rgba(0,0,0,0.05);
+	text-align: center;
+
+	font-family: @font-swatch-font-family;
+	font-size: @font__button--font-size;
+	font-weight: @font__button--font-weight;
+	line-height: @font__button--line-height;
+	letter-spacing: @font__button--letter-spacing;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    @media @tablet {
+    	font-size: 16px;
+    }
+
+	&:hover {
+		background-color: darken(@color__button--background, 5%);
+	}
+	&:focus {
+		outline: 0;
+	}
+
+}
