@@ -125,14 +125,14 @@
             "color__h1--text": "#1e1e1e",
             "font__h1--font-family" : "@font-swatch1-font-family",
             "font__h1--font-size" : "36px",
-            "font__h1--font-weight" : "400",
+            "font__h1--font-weight" : "700",
             "font__h1--line-height" : "48px",
             "font__h1--letter-spacing" : "0px",
 
             "color__h2--text": "#1e1e1e",
             "font__h2--font-family" : "@font-swatch2-font-family",
             "font__h2--font-size" : "30px",
-            "font__h2--font-weight" : "400",
+            "font__h2--font-weight" : "700",
             "font__h2--line-height" : "40px",
             "font__h2--letter-spacing" : "0px",
 
@@ -159,14 +159,14 @@
         },
         "button": {
             "color__button--background": "#1e1e1e",
-            "color__button--background--hover": "darken(@color__button--background, 10%)",
-            "color__button--text": "@color__link--text",
+            "color__button--background--hover": "gold",
+            "color__button--text": "#fff",
 
             "font__button--font-family" : "@font-swatch7-font-family",
-            "font__button--font-size" : "14px",
+            "font__button--font-size" : "18px",
             "font__button--font-weight" : "400",
-            "font__button--line-height" : "24px",
-            "font__button--letter-spacing" : "2px"
+            "font__button--line-height" : "60px",
+            "font__button--letter-spacing" : "0px"
         }
     }
 }
