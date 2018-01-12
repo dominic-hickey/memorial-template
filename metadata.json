@@ -20,7 +20,7 @@
     "fontSwatch": {
        "title": "Karla / Merriweather",
         "font1": {
-            "font-family": "\"Josefin Sans\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-family": "\"Open Sans\", Arial, Helvetica, sans-serif",
             "font-size": "32px",
             "font-weight": "400",
             "line-height": "54px",
@@ -28,7 +28,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Open Sans\", Arial, Helvetica, sans-serif",
             "font-size": "24px",
             "font-weight": "400",
             "line-height": "36px",
@@ -36,7 +36,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Open Sans\", Arial, Helvetica, sans-serif",
             "font-size": "22px",
             "font-weight": "400",
             "line-height": "42px",
@@ -44,12 +44,12 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Open Sans\", Arial, Helvetica, sans-serif",
             "font-size": "20px",
-            "font-weight": "400",
+            "font-weight": "700",
             "line-height": "36px",
             "color": "@color-swatch4",
-            "letter-spacing": "inherit"
+            "letter-spacing": "1px"
         },
         "font5": {
             "font-family": "\"Merriweather\", Georgia, serif",
@@ -60,7 +60,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Open Sans\", Arial, Helvetica, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "26px",
@@ -71,7 +71,7 @@
             "background-color-hover": "darken(@color-swatch3,8%)"
         },
         "font7": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Open Sans\", Arial, Helvetica, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "27px",
@@ -81,7 +81,7 @@
             "background-color-hover": "darken(@color-swatch3,5%)"
         },
         "font8": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Open Sans\", Arial, Helvetica, sans-serif",
             "font-size": "38px",
             "font-weight": "400",
             "line-height": "48px",
@@ -89,7 +89,7 @@
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "\"Merriweather\", Georgia, serif",
+            "font-family": "\"Open Sans\", Arial, Helvetica, sans-serif",
             "font-size": "20px",
             "font-weight": "400",
             "line-height": "27px",
@@ -97,7 +97,7 @@
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Josefin Sans\", \"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
+            "font-family": "\"Open Sans\", Arial, Helvetica, sans-serif",
             "font-size": "26px",
             "font-weight": "700",
             "line-height": "32px",
@@ -111,22 +111,22 @@
             "color__secondary": "#414141"
         },
         "site": {
-            "color__body--background": "#ffffff",
-            "color__link--text": "#e7a022",
-            "color__companyname--text": "#ffffff",
+            "color__body--background": "#dcdcdc",
+            "color__link--text": "#4794e8",
 
+            "color__companyname--text": "@color__h1--text",
             "font__companyname--font-family" : "@font-swatch10-font-family",
             "font__companyname--font-size" : "50px",
             "font__companyname--font-weight" : "700",
             "font__companyname--line-height" : "60px",
-            "font__companyname--letter-spacing" : "1px"
+            "font__companyname--letter-spacing" : "0px"
         },
         "typography": {
             "color__h1--text": "#1e1e1e",
             "font__h1--font-family" : "@font-swatch1-font-family",
-            "font__h1--font-size" : "36px",
+            "font__h1--font-size" : "38px",
             "font__h1--font-weight" : "700",
-            "font__h1--line-height" : "48px",
+            "font__h1--line-height" : "44px",
             "font__h1--letter-spacing" : "0px",
 
             "color__h2--text": "#1e1e1e",
@@ -138,33 +138,33 @@
 
             "color__h3--text": "#1e1e1e",
             "font__h3--font-family" : "@font-swatch3-font-family",
-            "font__h3--font-size" : "22px",
-            "font__h3--font-weight" : "400",
-            "font__h3--line-height" : "34px",
+            "font__h3--font-size" : "15px",
+            "font__h3--font-weight" : "700",
+            "font__h3--line-height" : "24px",
             "font__h3--letter-spacing" : "0px",
 
-            "color__h4--text": "#1e1e1e",
+            "color__h4--text": "#9e9e9e",
             "font__h4--font-family" : "@font-swatch4-font-family",
-            "font__h4--font-size" : "20px",
-            "font__h4--font-weight" : "400",
-            "font__h4--line-height" : "38px",
-            "font__h4--letter-spacing" : "0px",
+            "font__h4--font-size" : "14px",
+            "font__h4--font-weight" : "700",
+            "font__h4--line-height" : "24px",
+            "font__h4--letter-spacing" : "1px",
 
             "color__p--text": "#808080",
             "font__p--font-family" : "@font-swatch5-font-family",
-            "font__p--font-size" : "17px",
+            "font__p--font-size" : "15px",
             "font__p--font-weight" : "400",
-            "font__p--line-height" : "36px",
+            "font__p--line-height" : "32px",
             "font__p--letter-spacing" : "0px"
         },
         "button": {
-            "color__button--background": "#1e1e1e",
+            "color__button--background": "#ab9337",
             "color__button--background--hover": "gold",
-            "color__button--text": "#fff",
 
+            "color__button--text": "#fff",
             "font__button--font-family" : "@font-swatch7-font-family",
             "font__button--font-size" : "18px",
-            "font__button--font-weight" : "400",
+            "font__button--font-weight" : "700",
             "font__button--line-height" : "60px",
             "font__button--letter-spacing" : "0px"
         }

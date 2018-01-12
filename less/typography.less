@@ -10,7 +10,6 @@
 h1, h2, h3, h4, h5, h6, p, span, button, label, input, select, a {
 	margin: 0;
 	padding: 0;
-	font-weight: normal;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -22,6 +21,7 @@ h1, h2, h3, h4, h5, h6, p, span, button, label, input, select, a {
 	font-weight: @font__companyname--font-weight;
 	line-height: @font__companyname--line-height;
 	letter-spacing: @font__companyname--letter-spacing;
+	color: @color__companyname--text;
 }
 
 h1, .heading--1 {
@@ -31,6 +31,7 @@ h1, .heading--1 {
 	font-weight: @font__h1--font-weight;
 	line-height: @font__h1--line-height;
 	letter-spacing: @font__h1--letter-spacing;
+	color: @color__h1--text;
 }
 
 h2, .heading--2 {
@@ -40,31 +41,39 @@ h2, .heading--2 {
 	font-weight: @font__h2--font-weight;
 	line-height: @font__h2--line-height;
 	letter-spacing: @font__h2--letter-spacing;
+	color: @color__h2--text;
 }
 
 h3, .heading--3 {
+	padding-bottom: 6px;
 	font-family: @font-swatch3-font-family;
 	font-size: @font__h3--font-size;
 	font-weight: @font__h3--font-weight;
 	line-height: @font__h3--line-height;
 	letter-spacing: @font__h3--letter-spacing;
+	color: @color__h3--text;
 }
 
 h4, .heading--4 {
+	padding-bottom: 14px;
 	font-family: @font-swatch4-font-family;
 	font-size: @font__h4--font-size;
 	font-weight: @font__h4--font-weight;
 	line-height: @font__h4--line-height;
-	letter-spacing: @font__buh4letter-spacing;
+	letter-spacing: @font__h4--letter-spacing;
+	color: @color__h4--text;
+	text-transform: uppercase;
 }
 
 p, .paragraph {
-	// padding-bottom: 20px;
+	padding-bottom: 14px;
 	font-family: @font-swatch5-font-family;
 	font-size: @font__p--font-size;
 	font-weight: @font__p--font-weight;
 	line-height: @font__p--line-height;
 	letter-spacing: @font__p--letter-spacing;
+	color: @color__p--text;
+	font-style: normal;
 }
 
 
@@ -76,12 +85,15 @@ p, .paragraph {
 
 a {
 	padding-bottom: 0;
+	.paragraph;
 	.transition(.3s);
 	text-decoration: none;
+	font-family: @font__h1--font-family;
+	color: @color__link--text;
 
     &:hover {
-        text-decoration: none;
         color: darken(@color__primary, 15%);
+        text-decoration: underline;
     }
 }
 
