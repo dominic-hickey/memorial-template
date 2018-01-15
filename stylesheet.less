@@ -43,6 +43,14 @@ body {
     padding: @value__spacing--desktop;
     background-color: white;
     // background-color: @color__container-–background;
+    box-shadow: 10px 20px 70px rgba(110,110,110,0.05);
+
+    @media @tablet {
+        padding: @value__spacing--tablet;
+    }
+    @media @mobile {
+        padding: @value__spacing--mobile;
+    }
 }
 
 
@@ -77,19 +85,23 @@ body {
 
     .image {
         border-radius: 50%;
+
+        @media @tablet {
+            max-width: 250px;
+        }
+        @media @mobile {
+            max-width: 75%;
+        }
     }
 }
 
 
 // Header Item: Title
 .header__item--title {
-    padding: 40px 0 @value__spacing--desktop;
+    padding: 20px 0 40px;
 
-    @media @tablet {
-        padding: 30px 0 @value__spacing--tablet;
-    }
     @media @mobile {
-        padding: 30px 0 @value__spacing--mobile;
+        padding: 10px 0 20px;
     }
 
     p {
@@ -123,6 +135,18 @@ body {
 }
 
 
+
+// Content
+.main__content {
+    @media @tablet {
+        margin-bottom: @value__spacing--mobile;
+        padding: @value__spacing--mobile 0;
+        border-bottom: 1px solid darken(@color__body--background, 1%);
+        border-top: 1px solid darken(@color__body--background, 1%);
+    }
+}
+
+
 // Sidebar
 .main__sidebar {
     p, a {
@@ -142,11 +166,34 @@ body {
 
 
 // Arrangements
+.arrangements__title {
+    margin-bottom: 20px;
+}
+.arrangements__group {
+    @media @tablet {
+        .flex-display;
+        .flex-wrap(wrap);
+
+        .arrangements__item {
+            .flex-basis(50%);
+        }
+    }
+    @media @mobile {
+        .arrangements__item {
+            .flex-basis(100%);
+        }
+    }
+}
 .arrangements__item {
     margin-bottom: 20px;
 
-    &:last-child {
+    &--button {
+        margin-top: 30px;
         margin-bottom: 0;
+
+        @media @tablet {
+            margin-top: 10px;
+        }
     }
 }
 

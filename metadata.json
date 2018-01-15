@@ -116,23 +116,23 @@
 
             "color__companyname--text": "@color__h1--text",
             "font__companyname--font-family" : "@font-swatch10-font-family",
-            "font__companyname--font-size" : "50px",
-            "font__companyname--font-weight" : "700",
-            "font__companyname--line-height" : "60px",
-            "font__companyname--letter-spacing" : "0px"
+            "font__companyname--font-size" : "48px",
+            "font__companyname--font-weight" : "400",
+            "font__companyname--line-height" : "56px",
+            "font__companyname--letter-spacing" : "-1px"
         },
         "typography": {
             "color__h1--text": "#1e1e1e",
             "font__h1--font-family" : "@font-swatch1-font-family",
-            "font__h1--font-size" : "38px",
-            "font__h1--font-weight" : "700",
+            "font__h1--font-size" : "36px",
+            "font__h1--font-weight" : "400",
             "font__h1--line-height" : "44px",
             "font__h1--letter-spacing" : "0px",
 
             "color__h2--text": "#1e1e1e",
             "font__h2--font-family" : "@font-swatch2-font-family",
             "font__h2--font-size" : "30px",
-            "font__h2--font-weight" : "700",
+            "font__h2--font-weight" : "400",
             "font__h2--line-height" : "40px",
             "font__h2--letter-spacing" : "0px",
 
@@ -147,7 +147,7 @@
             "font__h4--font-family" : "@font-swatch4-font-family",
             "font__h4--font-size" : "14px",
             "font__h4--font-weight" : "700",
-            "font__h4--line-height" : "24px",
+            "font__h4--line-height" : "22px",
             "font__h4--letter-spacing" : "1px",
 
             "color__p--text": "#808080",

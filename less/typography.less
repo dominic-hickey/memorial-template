@@ -22,6 +22,12 @@ h1, h2, h3, h4, h5, h6, p, span, button, label, input, select, a {
 	line-height: @font__companyname--line-height;
 	letter-spacing: @font__companyname--letter-spacing;
 	color: @color__companyname--text;
+
+	@media @tablet {
+		font-size: bkscale(@font__companyname--font-size, 0.7);
+		line-height: bkscale(@font__companyname--line-height, 0.7);
+		letter-spacing: 0;
+	}
 }
 
 h1, .heading--1 {
@@ -32,6 +38,11 @@ h1, .heading--1 {
 	line-height: @font__h1--line-height;
 	letter-spacing: @font__h1--letter-spacing;
 	color: @color__h1--text;
+
+	@media @mobile {
+		font-size: bkscale(@font__h1--font-size, 0.8);
+		line-height: bkscale(@font__h1--line-height, 0.8);
+	}
 }
 
 h2, .heading--2 {
@@ -42,6 +53,11 @@ h2, .heading--2 {
 	line-height: @font__h2--line-height;
 	letter-spacing: @font__h2--letter-spacing;
 	color: @color__h2--text;
+
+	@media @tablet {
+		font-size: bkscale(@font__h2--font-size, 0.8);
+		line-height: bkscale(@font__h2--line-height, 0.8);
+	}
 }
 
 h3, .heading--3 {
@@ -52,6 +68,11 @@ h3, .heading--3 {
 	line-height: @font__h3--line-height;
 	letter-spacing: @font__h3--letter-spacing;
 	color: @color__h3--text;
+
+	@media @tablet {
+		font-size: bkscale(@font__h3--font-size, 0.9);
+		line-height: bkscale(@font__h3--line-height, 0.9);
+	}
 }
 
 h4, .heading--4 {
@@ -63,6 +84,9 @@ h4, .heading--4 {
 	letter-spacing: @font__h4--letter-spacing;
 	color: @color__h4--text;
 	text-transform: uppercase;
+
+	@media @tablet {
+	}
 }
 
 p, .paragraph {
@@ -93,7 +117,7 @@ a {
 
     &:hover {
         color: darken(@color__primary, 15%);
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
