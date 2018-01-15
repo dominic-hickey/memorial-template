@@ -18,12 +18,12 @@
             <div class="col  col--two-thirds">
                 <main class="main__content">
                     <div class="main__headline">
-                        {{widget('content', 'headline', {content: '
+                        {{widget('content', 'obit-headline', {content: '
                             <h1>Headline for obituary</h1>
                         '})|raw}}
                     </div>
                     <div class="main__description">
-                        {{widget('content', 'description', {content: '
+                        {{widget('content', 'obit-description', {content: '
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia porta nunc, nec porta turpis vehicula id. Pellentesque suscipit sed elit eget sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus scelerisque, nisl in bibendum pretium.</p>
                             <p>Nullam varius congue urna, ac pharetra odio tristique id. Praesent euismod varius metus, in venenatis neque sagittis vel. Nam ut rutrum augue, sed placerat diam. Ut vitae nisl id odio ultrices aliquam. Integer mollis fringilla nisl et vulputate. In ullamcorper imperdiet mi et interdum. Morbi eget metus id arcu tincidunt dapibus. Quisque magna ante, convallis vel ipsum non, vulputate scelerisque nunc.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia porta nunc, nec porta turpis vehicula id. Pellentesque suscipit sed elit eget sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus scelerisque, nisl in bibendum pretium.</p>
@@ -35,53 +35,7 @@
 
             <!-- Sidebar -->
             <div class="col  col--third">
-                <aside class="main__sidebar">
-                    <div class="arrangements">
-                        <div class="arrangements__title">
-                            {{widget('content', 'arrangements-heading', {content: '
-                                <h4>Funeral Arrangements</h4>
-                            '})|raw}}
-                        </div>
-                        <div class="arrangements__group">
-                            <div class="arrangements__item">
-                                {{widget('content', 'arrangements-visitation', {content: '
-                                    <h3>Visitation</h3>
-                                    <p>Friday Nov 3rd, 5-7pm.</p>
-                                    <p>Saturday Nov 4th, 10am - 12pm.</p>
-                                '})|raw}}
-                            </div>
-                            <div class="arrangements__item">
-                                {{widget('content', 'arrangements-funeral', {content: '
-                                    <h3>Time</h3>
-                                    <p>Sunday 5th Nov, 10am.</p>
-                                '})|raw}}
-                            </div>
-                            <div class="arrangements__item">
-                                {{widget('content', 'arrangements-address', {content: '
-                                    <h3>Location</h3>
-                                '})|raw}}
-                                {{widget('profile', 'arrangements-profile-address', {
-                                    'profileType':'address',
-                                    'email': 'profile'
-                                })|raw}}
-                            </div>
-                            <div class="arrangements__item">
-                                {{widget('content', 'arrangements-email', {content: '
-                                    <h3>Any questions?</h3>
-                                '})|raw}}
-                                {{widget('profile', 'arrangements--profile-email', {
-                                    'profileType':'email',
-                                    'email': 'profile'
-                                })|raw}}
-                            </div>
-                        </div>
-                        <div class="arrangements__item  arrangements__item--button">
-                            {{widget('button', 'donate-button', {
-                                'text': 'Donate'
-                            })|raw}}
-                        </div>
-                    </div>
-                </aside>
+                {% include "includes/sidebar.twig" %}
             </div>
 
         </div>

@@ -1,0 +1,51 @@
+<aside class="main__sidebar">
+    <div class="arrangements">
+        <div class="arrangements__title">
+            {{widget('content', 'arrangements-heading', {content: '
+                <h4>Funeral Arrangements</h4>
+            '})|raw}}
+        </div>
+        <div class="arrangements__group">
+            <div class="arrangements__item">
+                {{widget('content', 'visitation-heading', {content: '
+                    <h3>Visitation</h3>
+                '})|raw}}
+                {{widget('content', 'visitation-text', {content: '
+                    <p>Friday Nov 3rd, 5-7pm.</p>
+                    <p>Saturday Nov 4th, 10am - 12pm.</p>
+                '})|raw}}
+            </div>
+            <div class="arrangements__item">
+                {{widget('content', 'date-heading', {content: '
+                    <h3>Time</h3>
+                '})|raw}}
+                {{widget('content', 'date -text', {content: '
+                    <p>Sunday 5th Nov, 10am.</p>
+                '})|raw}}
+            </div>
+            <div class="arrangements__item">
+                {{widget('content', 'address-heading', {content: '
+                    <h3>Location</h3>
+                '})|raw}}
+                {{widget('profile', 'address-text', {
+                    'profileType':'address',
+                    'email': 'profile'
+                })|raw}}
+            </div>
+            <div class="arrangements__item">
+                {{widget('content', 'contact-heading', {content: '
+                    <h3>Any questions?</h3>
+                '})|raw}}
+                {{widget('profile', 'contact-text', {
+                    'profileType':'email',
+                    'email': 'profile'
+                })|raw}}
+            </div>
+        </div>
+        <div class="arrangements__item  arrangements__item--button">
+            {{widget('button', 'donate-button', {
+                'text': 'Donate'
+            })|raw}}
+        </div>
+    </div>
+</aside>

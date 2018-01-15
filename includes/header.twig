@@ -1,15 +1,15 @@
 <!-- Header -->
 <header class="header">
     <div class="header__item  header__item--image">
-        {{widget('image', 'profile-image', {
+        {{widget('image', 'obit-image', {
             'src': asset('/images/profile-image.jpg')
         })|raw}}
     </div>
     <div class="header__item  header__item--title">
-        {{widget('companyname', 'companyname', {
+        {{widget('companyname', 'obit-name', {
             'business': 'profile'
         })|raw}}
-        {{widget('content', 'lifespan', {content: '
+        {{widget('content', 'obit-lifespan', {content: '
             <p>1939 - 2017</p>
         '})|raw}}
     </div>
