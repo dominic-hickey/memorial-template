@@ -114,7 +114,7 @@
             "color__body--background": "#dcdcdc",
             "color__link--text": "#4794e8",
 
-            "color__companyname--text": "@color__h1--text",
+            "color__companyname--text": "#1e1e1e",
             "font__companyname--font-family" : "@font-swatch10-font-family",
             "font__companyname--font-size" : "48px",
             "font__companyname--font-weight" : "400",
@@ -140,7 +140,7 @@
             "font__h3--font-family" : "@font-swatch3-font-family",
             "font__h3--font-size" : "15px",
             "font__h3--font-weight" : "700",
-            "font__h3--line-height" : "24px",
+            "font__h3--line-height" : "28px",
             "font__h3--letter-spacing" : "0px",
 
             "color__h4--text": "#9e9e9e",

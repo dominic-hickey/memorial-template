@@ -149,12 +149,19 @@ body {
 
 // Sidebar
 .main__sidebar {
-    p, a {
-        line-height: bkscale(@font__p--line-height, .9);
-    }
-    h1, h2,  h4, p {
+    // p, a {
+    //     line-height: bkscale(@font__p--line-height, .9);
+    // }
+    h4 {
         padding-bottom: 0;
-        font-family: @font__h1--font-family;
+    }
+    p {
+        padding-bottom: 0;
+        font-family: @font__h3--font-family;
+        font-size: @font__h3--font-size;
+        line-height: @font__h3--line-height;
+        letter-spacing: @font__h3--letter-spacing;
+        color: @color__p--text;
     }
     a {
         color: @color__link--text;
