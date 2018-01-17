@@ -18,12 +18,16 @@
             <div class="col  col--two-thirds">
                 <main class="main__content">
                     <div class="main__headline">
-                        {{widget('content', 'headline', {content: '
+                        {{widget('content', 'obit-headline', {content: '
                             <h1>Headline for obituary</h1>
                         '})|raw}}
                     </div>
                     <div class="main__description">
-                        {{zone('main')|raw}}
+                        {{widget('content', 'obit-description', {content: '
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia porta nunc, nec porta turpis vehicula id. Pellentesque suscipit sed elit eget sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus scelerisque, nisl in bibendum pretium.</p>
+                            <p>Nullam varius congue urna, ac pharetra odio tristique id. Praesent euismod varius metus, in venenatis neque sagittis vel. Nam ut rutrum augue, sed placerat diam. Ut vitae nisl id odio ultrices aliquam. Integer mollis fringilla nisl et vulputate. In ullamcorper imperdiet mi et interdum. Morbi eget metus id arcu tincidunt dapibus. Quisque magna ante, convallis vel ipsum non, vulputate scelerisque nunc.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lacinia porta nunc, nec porta turpis vehicula id. Pellentesque suscipit sed elit eget sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus scelerisque, nisl in bibendum pretium.</p>
+                        '})|raw}}
                     </div>
                 </main>
             </div>
@@ -35,6 +39,12 @@
             </div>
 
         </div>
+    </div>
+
+
+    <!-- Zone -->
+    <div class="main-zone">
+        {{zone('main')|raw}}
     </div>
 
 
